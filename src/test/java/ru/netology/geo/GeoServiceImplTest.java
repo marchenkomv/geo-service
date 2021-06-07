@@ -9,13 +9,13 @@ import static ru.netology.entity.Country.USA;
 
 public class GeoServiceImplTest {
     @Test
-    void getCountryByRuIp(){
+    void getCountryByRuIp() {
         Location actual = new GeoServiceImpl().byIp("172.");
         Assertions.assertEquals(RUSSIA, actual.getCountry());
     }
 
     @Test
-    void getCountryByEnIp(){
+    void getCountryByEnIp() {
         Location actual = new GeoServiceImpl().byIp("96.");
         Assertions.assertEquals(USA, actual.getCountry());
     }

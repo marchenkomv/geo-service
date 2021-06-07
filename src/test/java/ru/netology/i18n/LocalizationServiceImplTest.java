@@ -8,14 +8,14 @@ import static ru.netology.entity.Country.USA;
 
 public class LocalizationServiceImplTest {
     @Test
-    void getRuMessage(){
+    void getRuMessage() {
         String expected = "Добро пожаловать";
         String actual = new LocalizationServiceImpl().locale(RUSSIA);
         Assertions.assertEquals(expected, actual);
     }
 
     @Test
-    void getEnMessage(){
+    void getEnMessage() {
         String expected = "Welcome";
         String actual = new LocalizationServiceImpl().locale(USA);
         Assertions.assertEquals(expected, actual);
